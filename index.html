@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Character | Felipe Fontes </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/millennium-falcon.png" type="image/x-icon">
+
+</head>
+
+<body>
+    <header>
+        <a href="./index.html">
+            <div class="logo">
+                <img src="./assets/millennium-falcon.png" alt="Logo" class="logo-img">
+                <img src="./assets/star-wars-logo.png" alt="Nave" class="logo-img">
+            </div>
+        </a>
+        <div class="nav-container">
+            <nav>
+                <ul>
+                    <a href="./index.html">
+                        <li>Characters</li>
+                    </a>
+                    <a href="./index.html">
+                        <li>planets</li>
+                    </a>
+                    <a href="./index.html">
+                        <li>starships</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="social-midia">
+            <a href="https://www.youtube.com/@DevFFontes/about" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://instagram.com/devffontes?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/message/WOU5ERCASA57H1" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/felipe-fontes-42a957281/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/FelipeFontesLisboa" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+    </header>
+
+    <div class="main-container">
+        <h2>Meet the Star Wars characters in one place</h2>
+
+        <audio autoplay="autoplay" controls="controls" loop="lopping" id="audio">
+            <source src="./assets/Star Wars.mp3" type="audio/mp3" />
+            Seu navegador não suporta HTML5
+        </audio>
+
+        <div class="main-content" id="main-content"></div> <!--
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/2.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>
+
+            <div class="card"
+                style="background-image: url(https://starwars-visualguide.com/assets/img/characters/1.jpg);">
+                <div class="character-name-bg">
+                    <span class="character-name">Lukes Futuro</span>
+                </div>
+            </div>    -->
+        <!-- o conteudo que esta aqui dentro da main content foi jerado pelo javaScrip Porem Se encontra comentado para posiveis duvidas-->
+        <!-- Site Da api Usada para a contrucão   https://swapi.dev/  | https://swapi.dev/api/people/   -->
+
+        <div class="modal" id="modal" onclick="hideModal()">
+            <div class="modal-content" id="modal-content"></div>
+        </div>
+
+
+        <div class="buttons">
+            <button id="back-button" disabled>Previuns</button>
+            <button id="next-button" disabled>Next</button>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <nav class="NavMobile">
+            <ul class="ListMobile">
+                <a href="./index.html">
+                    <li>Characters</li>
+                </a>
+                <a href="./planets.html">
+                    <li>planets</li>
+                </a>
+                <a href="./starships.html">
+                    <li>starships</li>
+                </a>
+            </ul>
+        </nav>
+        <img class="logoMobile" src="./assets/14-removebg-preview.png" />
+
+        <div class="social-midia-mobile">
+            <a href="https://www.youtube.com/@DevFFontes/about" target="_blank">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="https://instagram.com/devffontes?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://wa.me/message/WOU5ERCASA57H1" target="_blank">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="https://www.linkedin.com/in/felipe-fontes-42a957281/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/FelipeFontesLisboa" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+
+        </div>
+
+        <p class="footer-logo">Star Wars.</p>
+
+
+        <a href="https://www.linkedin.com/in/felipe-fontes-42a957281/" target="_blank">
+            <p class="copyrigth"> All Rights Reserved Developer &copy; Felipe Fontes</p>
+        </a>
+    </footer>
+
+
+    <script src="https://kit.fontawesome.com/9bd1f640f8.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
